@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Forms</h2>
+   <form method="get" action="demo3_tables.html">
+    Firstname:<input type="text" name="fname" required/><br><br>
+    Lastname:<input type="text" name="lname" /><br><br>
+    Password:<input type="password" name="passwd"/><br><br>
+    Select Gender:
+    <input type="Radio" name="gender" value="Male">Male
+    <input type="Radio" name="gender" value="Female">Female <br>
+    Select Vehicle:
+    <input type="checkbox" name="Vehicle" value="Bike">Bike
+    <input type="checkbox" name="Vehicle" value="Car">Car
+    <input type="checkbox" name="Vehicle" value="Scooter">Scooter <br>
+    Select City:
+    <select name="city">
+        <option value="Delhi">New Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Chennai">Chennai</option>
+    </select>
+    <br>
+    Country:<input type="text" name="country" placeholder="India" readonly/><br>
+    Email: <input type="Email" name="email"><br>
+    Phone No: <input type="tel" name="pno"><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="0" max="110" placeholder="Enter age"/><br>
+    Birthdate: <input type="date" id="dob"/><br>
+    Birth time: <input type="time" id="btime"/><br>
+
+    Image
+    <input type="image" src="D:\ThinQ25-26\Y12HTMLCSS\images\yellowrose.jpg" width="100" height="100"/><br>
+   <br>
+   Select File:
+   <input type="file" id="resume"/><br>
+
+   Hidden:
+   <input type="hidden" id="pancard" value="JH786384835"><br>
+
+   Feedback:
+   <textarea name="msg" rows="5" cols="20"></textarea> <br>
+   <input type="button" value="Click me" onclick="alert('Hello Java')"/>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+
+
+   </form>
+</body>
+</html>

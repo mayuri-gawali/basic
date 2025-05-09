@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Validation Without Regex</title>
+</head>
+<body>
+
+  <h2>Email Validation</h2>
+  <input type="text" id="email" placeholder="Enter your email">
+  <button onclick="validateEmail()">Check</button>
+  <p id="message"></p>
+
+  <script>
+    function validateEmail() {
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message");
+
+     
+      var atPos = email.indexOf('@');
+      var dotPos = email.lastIndexOf('.');
+
+      if (
+        atPos > 0 &&
+        dotPos > atPos + 1 &&
+        dotPos < email.length - 1 &&
+        email.includes('@') &&
+        email.includes('.')
+      ) {
+        message.textContent = "Valid email!";
+        message.style.color = "green";
+      } else {
+        message.textContent = "Invalid email!";
+        message.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>
